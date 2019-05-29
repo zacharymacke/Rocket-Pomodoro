@@ -1,0 +1,140 @@
+:root {
+	--primary: #A9B7C0;
+	--dark-primary: #7a9d96;	
+	--primary-text: #ffffff;
+
+	--gray: #6f8f8f;
+
+
+	--accent: #C7D8C6;
+	--dark-accent: #7F8990;
+	--alternate-accent: #92C1A2;
+}
+
+#container{
+	width: 300px;
+	height: 400px;
+	background-color:	var(--primary);
+	border-radius: 10px;
+}
+#top{
+	width: 300px;
+	height: 40px;
+	background-color: var(--primary);
+	border-top-left-radius:10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+#bot{
+	width: 300px;
+	height:40px;
+	background-color: var(--primary);
+	border-top-left-radius:0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+
+/* ----- Middle container (enclosing circle timer) ----- */
+#main-box{
+	width: 300px;
+	height:320px;
+}
+#upperbuffer{
+	width: 300px;
+	height: 40px;
+}
+#lowerbuffer{
+	width: 300px;
+	height: 60px;
+}
+#circleContainer{
+	display: block;
+	margin: auto;
+}
+#circlebox{
+	width: 300px;
+	height: 220px;
+	background-clip: content-box;
+}
+#timer{
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+}
+#timeLeft{
+	font-family: Arial;
+	font-size: 28px;
+	fill: var(--primary-text);
+}
+
+
+/* ----- Rocket Button (Start Timer) ----- */
+#rocketbutton{
+	  height: auto;
+    width: auto;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  	transition: transform 0.15s linear;
+		outline: none;
+}
+#rocketbutton:hover {
+  transform: scale(1.1);
+  transition: transform 0.15s linear;
+}
+#rocketbutton:active{
+	transform: scale(1.0);
+  transition: transform 0.15s linear;
+}
+#rocket{
+	height:40px;
+	width: 40px;
+}
+.buttonOff{
+
+}
+
+
+/* ----- Exit button (X) ----- */ 
+#exit {
+  height: 20px;
+  width: 30px;
+  float: right;
+}
+#exitButton {
+	padding-top: 10px;
+	display: inline-block;
+	float: right;
+}
+
+#logo {
+  height: 50px;
+	width: 75px;
+	position: absolute;
+	left:128px;
+	padding-top: 2px;
+}
+
+
+/* ----- General Button Config ----- */
+.genButton{
+	height: auto;
+  width: auto;
+  border: none;
+  background: none;
+	cursor: pointer;
+	outline: none;
+}
+.genButton:active{
+  transform: scale(.9);
+}
+.genButton:hover {
+  transform: scale(1.1);
+  transition: transform 0.15s linear;
+}

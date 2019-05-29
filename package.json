@@ -1,0 +1,26 @@
+{
+  "name": "rocket-pomodoro",
+  "version": "1.0.0",
+  "description": "Rocket themed pomodoro timer",
+  "main": "ringcontroller.js",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "nouislider": "^13.1.5",
+    "watchify": "^3.11.1",
+    "webpack": "^4.32.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharymacke/Rocket-Pomodoro.git"
+  },
+  "author": "Zach Macke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacharymacke/Rocket-Pomodoro/issues"
+  },
+  "homepage": "https://github.com/zacharymacke/Rocket-Pomodoro#readme"
+}

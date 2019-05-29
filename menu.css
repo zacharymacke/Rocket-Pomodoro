@@ -1,0 +1,149 @@
+/* ----- Menubar layout ----- */
+#menubar{
+  height: inherit;
+  background-color: var(--dark-primary);
+  width: 160px;
+  position: absolute;
+  display: none;
+  z-index: 10;
+  border-radius: 9px;
+  box-shadow: 15px;
+
+}
+#menubar-top {
+	width: inherit;
+  height: 40px;
+}
+
+
+/* ----- Open the menu ----- */
+#rocketOpenButton {
+  padding-top: 10px;
+  display: inline-block;
+}
+#rocketOpen {
+  height: 20px;
+  width: 40px;
+}
+
+
+/* ----- Close the menu ----- */
+#rocketclosebutton {
+	float: right;
+	display: block;
+	padding-top: 10px;
+}
+#rocketclose{
+	height: 20px;
+	width: 30px;
+}
+
+/* ----- Timer-Text------*/
+#studyText{
+  text-align: center;
+  margin-top: 15px;
+  font-family: Arial;
+  font-size: 13px;
+  -webkit-text-fill-color: var(--primary-text);
+}
+
+
+/* ----- Slider ----- */
+#slider-box {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: var(--accent);
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+	margin-left: auto;
+}
+.slider:hover {
+  opacity: 2.5;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+	width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--alternate-accent);
+  cursor: pointer;
+}
+#minuteHolder{
+  width: 40px;
+  height: 20px;
+  font-family: Arial;
+  background-color: var(--gray);
+  text-align: center;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.menuText {
+  height: inherit;
+  width: inherit;
+  display: inline-block;
+  font-size: 14px;
+  color: var(--primary-text);
+}
+
+
+/* ----- Set time moving button ----- */
+#setTimeButtonHolder{
+	display: block;
+	width: 100px;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#setTime{
+	display: inline-block;
+  border-radius: 4px;
+  background-color: var(--alternate-accent);
+	border: none;
+	outline: none;
+	color: var(--primary-text);
+	text-align: center;
+	font-family: Arial;
+  font-size: 20px;
+	cursor: pointer;
+	height: inherit;
+	width: inherit;
+	transition: all .5s;
+}
+#setTime span {
+	cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#setTime span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#setTime:hover span {
+  padding-right: 25px;
+}
+#setTime:hover span:after {
+  opacity: 1;
+  right: 0;
+}
