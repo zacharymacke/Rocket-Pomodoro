@@ -68,6 +68,11 @@
 	font-size: 28px;
 	fill: var(--primary-text);
 }
+#timerType{
+	font-family: Arial;
+	font-size: 12px;
+	fill: var(--primary-text);
+}
 
 
 /* ----- Rocket Button (Start Timer) ----- */
