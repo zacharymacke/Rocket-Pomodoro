@@ -8,13 +8,12 @@
   z-index: 10;
   border-radius: 9px;
   box-shadow: 15px;
-
 }
+
 #menubar-top {
 	width: inherit;
   height: 40px;
 }
-
 
 /* ----- Open the menu ----- */
 #rocketOpenButton {
@@ -25,7 +24,6 @@
   height: 20px;
   width: 40px;
 }
-
 
 /* ----- Close the menu ----- */
 #rocketclosebutton {
@@ -47,7 +45,6 @@
   -webkit-text-fill-color: var(--primary-text);
 }
 
-
 /* ----- Slider ----- */
 #slider-box {
 	width: 90%;
@@ -57,6 +54,7 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -69,9 +67,11 @@
   transition: opacity .2s;
 	margin-left: auto;
 }
+
 .slider:hover {
   opacity: 2.5;
 }
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -81,6 +81,7 @@
   background: var(--alternate-accent);
   cursor: pointer;
 }
+
 #minuteHolder{
   width: 40px;
   height: 20px;
@@ -101,7 +102,6 @@
   color: var(--primary-text);
 }
 
-
 /* ----- Set time moving button ----- */
 #setTimeButtonHolder{
 	display: block;
@@ -111,6 +111,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
 #setTime{
 	display: inline-block;
   border-radius: 4px;
@@ -126,12 +127,14 @@
 	width: inherit;
 	transition: all .5s;
 }
+
 #setTime span {
 	cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
+
 #setTime span:after {
   content: '\00bb';
   position: absolute;
@@ -140,9 +143,11 @@
   right: -20px;
   transition: 0.5s;
 }
+
 #setTime:hover span {
   padding-right: 25px;
 }
+
 #setTime:hover span:after {
   opacity: 1;
   right: 0;

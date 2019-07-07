@@ -3,23 +3,19 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="menu.css">
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/menu.css">
 	<title></title>
 </head>
 
 <body>
 	<div id="container">
-
 		<div id="menubar">
 			<div id="menubar-top">
 				<button id='rocketclosebutton' class="genButton">
 					<img src="./image/rocketclose.svg" id="rocketclose"></img>
 				</button>
 			</div>
-
-			<!-- <div id=timerText>Timer</div> -->
-
 			<div id=studyText>Work</div>
 				<div id="minuteHolder">
 					<span class="menuText" id='minuteDisplay'> 30:00 </span>
@@ -27,7 +23,6 @@
 			<div id="slider-box">
 				<input type="range" min="5" max="60" value="30" class="slider" id="minuteRange" step="5">
 			</div>
-
 			<div id=studyText>Break</div>
 				<div id="minuteHolder">
 					<span class="menuText" id='breakDisplay'> 05:00 </span>
@@ -35,7 +30,6 @@
 			<div id="slider-box">
 				<input type="range" min="0" max="15" value="5" class="slider" id="breakRange">
 			</div>
-
 			<div id=studyText>Rounds</div>
 				<div id="minuteHolder">
 					<span class="menuText" id='roundDisplay'> 2.0 </span>
@@ -43,12 +37,10 @@
 			<div id="slider-box">
 				<input type="range" min="1" max="4" value="2" class="slider" id="roundRange">
 			</div>
-
 			<div id = setTimeButtonHolder>
 				<button id="setTime"><span>Launch</span></button>
 			</div>
 		</div>
-
 		<div id="top">
 			<button id='rocketOpenButton' class="genButton">
 				<img src="./image/rocketopen.svg" id="rocketOpen"></img>
@@ -57,9 +49,7 @@
 			<button id='exitButton' class="genButton">
 				<img src="./image/exit.svg" id="exit"></img>
 			</button>
-
 		</div>
-		
 		<div id="main-box">
 			<div id="upperbuffer"></div>
 			<div id='circleContainer'>
@@ -91,11 +81,9 @@
 				</button>
 			</div>
 		</div>
-
 		<div id="bot"></div>
-
 	</div>
-
 	<script src="app.js"></script>
 </body>
+
 </html>

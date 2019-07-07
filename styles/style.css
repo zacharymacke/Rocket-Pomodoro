@@ -14,6 +14,7 @@
 	background-color:	var(--primary);
 	border-radius: 10px;
 }
+
 #top{
 	width: 300px;
 	height: 40px;
@@ -23,6 +24,7 @@
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
 }
+
 #bot{
 	width: 300px;
 	height:40px;
@@ -33,44 +35,49 @@
 	border-bottom-left-radius: 10px;
 }
 
-
 /* ----- Middle container (enclosing circle timer) ----- */
 #main-box{
 	width: 300px;
 	height:320px;
 }
+
 #upperbuffer{
 	width: 300px;
 	height: 40px;
 }
+
 #lowerbuffer{
 	width: 300px;
 	height: 60px;
 }
+
 #circleContainer{
 	display: block;
 	margin: auto;
 }
+
 #circlebox{
 	width: 300px;
 	height: 220px;
 	background-clip: content-box;
 }
+
 #timer{
 	transform: rotate(-90deg);
 	transform-origin: 50% 50%;
 }
+
 #timeLeft{
 	font-family: Arial;
 	font-size: 28px;
 	fill: var(--primary-text);
 }
+
 #timerType{
 	font-family: Arial;
 	font-size: 12px;
 	fill: var(--primary-text);
 }
-
 
 /* ----- Rocket Button (Start Timer) ----- */
 #rocketbutton{
@@ -86,22 +93,21 @@
   	transition: transform 0.15s linear;
 		outline: none;
 }
+
 #rocketbutton:hover {
   transform: scale(1.1);
   transition: transform 0.15s linear;
 }
+
 #rocketbutton:active{
 	transform: scale(1.0);
   transition: transform 0.15s linear;
 }
+
 #rocket{
 	height:40px;
 	width: 40px;
 }
-.buttonOff{
-
-}
-
 
 /* ----- Exit button (X) ----- */ 
 #exit {
@@ -109,6 +115,7 @@
   width: 30px;
   float: right;
 }
+
 #exitButton {
 	padding-top: 10px;
 	display: inline-block;
@@ -123,7 +130,6 @@
 	padding-top: 2px;
 }
 
-
 /* ----- General Button Config ----- */
 .genButton{
 	height: auto;
@@ -133,9 +139,11 @@
 	cursor: pointer;
 	outline: none;
 }
+
 .genButton:active{
   transform: scale(.9);
 }
+
 .genButton:hover {
   transform: scale(1.1);
   transition: transform 0.15s linear;

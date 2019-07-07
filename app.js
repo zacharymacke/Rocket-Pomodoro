@@ -1,6 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-unused-lets */
-
 //global interval, holds all global timers
 let placeHolderTime, interval, timerOn;
 let circle = document.getElementById('timer');
@@ -16,8 +13,6 @@ circle.style.strokeDasharrayoffset = `${circumference}`;
 window.onload = function(){
 	init();
 };
-
-//document.getElementById("menubar").style.display = 'inline-block'; 
 
 let rocketButton = document.getElementById("rocketbutton").addEventListener('click', function(){
   studyCycle();
@@ -129,7 +124,7 @@ function breakTimerOn(){
 }
 
 function fixTime(minutes, seconds){
-      //fix leading 0
+  //fix leading 0
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
   return (minutes + ':' + seconds);
